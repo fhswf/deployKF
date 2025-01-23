@@ -177,6 +177,8 @@ oauth2Proxy:
   ## NOTE: this prevents background requests being redirected and accumulating CSRF cookies
   enableSignInPage: {{< .Values.deploykf_core.deploykf_auth.oauth2Proxy.enableSignInPage | conv.ToBool >}}
 
+  insecureAllowUnverifiedEmail: {{< .Values.deploykf_core.deploykf_auth.oauth2Proxy.insecureAllowUnverifiedEmail | conv.ToBool >}}
+
   ## OpenID configs for oauth2-proxy
   ##
   oidc:
